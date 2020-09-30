@@ -1,0 +1,19 @@
+{
+  "days": "Sunday_Wednesday_Tuesday_Thursday_Friday_Saturday",
+  "daysShort": "Sun_Wed_Tue_Thu_Fri_Sat",
+  "months": "January_February_March_April_May_June_July_August_September_October_November_December",
+  "monthsShort": "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec",
+  "cancel": "cancel",
+  "gender": "gender",
+  "birthday": "birthday",
+  "yesterday": "yesterday",
+  "langs": {
+    "en": "English",
+    "th": "Thai"
+  },
+  "Gender": {
+    "Female": "female",
+    "Male": "male",
+    "Unknow": "unknown"
+  }
+}
