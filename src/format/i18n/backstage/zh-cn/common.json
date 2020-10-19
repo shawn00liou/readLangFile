@@ -173,8 +173,8 @@
   "ConfirmationSentence": "確認 {0} 嗎？",
   "resetToDefault": "重置並使用預設",
   "remove": "刪除",
-  "pleaseInputPasswordRight": "请输入正确密码格式: (大小写)英文字母+数字, 至少 8 个字元",
-  "pleaseInputAccountRight": "请输入正确格式: 英文字母+数字, 至少 5 个字元",
+  "pleaseInputPasswordRight": "请输入正确密码格式: (大小写)英文字母+数字, 8-18 个字元",
+  "pleaseInputAccountRight": "请输入正确格式: 英文字母+数字, 5-30 个字元",
   "selectMerchantHint": "请选择检视站长",
   "merchant": "站长",
   "none": "无",
@@ -200,7 +200,9 @@
   "langs": {
     "en": "English",
     "zh-cn": "简体中文",
-    "zh-tw": "繁體中文",
+    "zh-tw": "繁体中文",
+    "vn": "越南文",
+    "inr": "印度文",
     "th": "泰文"
   },
   "backToPreviousLevel": "返回上层",
@@ -225,5 +227,16 @@
   "default": "预设",
   "searchDateRange": "搜寻范围: {0}{1} 内",
   "unitWeek": "周",
-  "countryCode": "国码"
+  "countryCode": "国码",
+  "languages": {
+    "en": "英文",
+    "zh-cn": "简体中文",
+    "zh-tw": "繁体中文",
+    "vi": "越南文",
+    "th": "泰文",
+    "hi": "印度文"
+  },
+  "copy": "复制",
+  "replaceSuccessfully": "取代成功",
+  "decimalPointLimit": "最多小数点后 {0} 位数"
 }
