@@ -39,7 +39,7 @@ const filesJs = require('./files.js');
     mapping(create, backstageJson, frontstageJson);
 
     filterNull(create);
-
+    console.log(create)
     const i18nMergeJson = extend(true, {}, langsJson, create);
 
 
