@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "extend": "^3.0.2",
     "fs-extra": "^9.0.1"
   }
 }
