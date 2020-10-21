@@ -6,7 +6,7 @@
   "cancel": "cancel",
   "gender": "gender",
   "birthday": "birthday",
-  "yesterday": "yesterday",
+  "remove": "remove",
   "langs": {
     "en": "English",
     "zh-cn": "简体中文",
@@ -22,5 +22,8 @@
     "Male": "male",
     "Unknow": "unknown"
   },
-  "WeChat": "WeChat"
+  "yesterday": "yesterday",
+  "WeChat": "WeChat",
+  "confirm": "Confirm",
+  "today": "Today"
 }

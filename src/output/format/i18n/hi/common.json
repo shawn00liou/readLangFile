@@ -6,7 +6,7 @@
   "cancel": "रद्द करें",
   "gender": "लिंग",
   "birthday": "जन्मदिन",
-  "yesterday": "बिता कल",
+  "remove": "डिलीट करें",
   "langs": {
     "en": "English",
     "zh-cn": "简体中文",
@@ -22,5 +22,8 @@
     "Male": "पुरुष",
     "Unknow": "अज्ञात"
   },
-  "WeChat": "WeChat"
+  "yesterday": "बिता कल",
+  "WeChat": "WeChat",
+  "confirm": "पुष्टि करें",
+  "today": "आज"
 }
