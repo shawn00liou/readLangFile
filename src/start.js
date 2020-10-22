@@ -1,5 +1,5 @@
 const path = require('path');
-const lansgetting = 'zh-tw';
+const lansgetting = 'en';
 const extend = require('extend');
 const filesJs = require('./files.js');
 
@@ -70,6 +70,12 @@ const headerLangKey = ['zh-cn', 'zh-tw', 'en', 'th', 'vi', 'hi'];
       'utf8',
     );
 
+    //前端前台
+    filesJs.createFileSync(
+      path.resolve(path.resolve('.', 'output', 'format', 'i18n','frontstage', lansgetting, filename)),
+      JSON.stringify(frontstageJson, null, 2),
+      'utf8',
+    );
 
   });
   //filesJs.writeFile(filename, JSON.stringify(create, null, 2), errorHandler);
