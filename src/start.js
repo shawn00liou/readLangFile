@@ -59,7 +59,7 @@ const headerLangKey = ['zh-cn', 'zh-tw', 'en', 'th', 'vi', 'hi'];
     moduleJspn = extend(true, {} ,moduleJspn, langsJson);//在取回目前使用的語系覆蓋
     /** */
 
-    mapping(moduleJspn, backstageJson, frontstageJson);
+    mapping(moduleJspn, backstageJson, frontstageJson,filename.split('.')[0]);
 
     filterNull(moduleJspn);
 
@@ -70,10 +70,17 @@ const headerLangKey = ['zh-cn', 'zh-tw', 'en', 'th', 'vi', 'hi'];
       'utf8',
     );
 
-    //前端前台
+    //前台前端
     filesJs.createFileSync(
       path.resolve(path.resolve('.', 'output', 'format', 'i18n','frontstage', lansgetting, filename)),
       JSON.stringify(frontstageJson, null, 2),
+      'utf8',
+    );
+
+    //後台前端
+    filesJs.createFileSync(
+      path.resolve(path.resolve('.', 'output', 'format', 'i18n','backstageJson', lansgetting, filename)),
+      JSON.stringify(backstageJson, null, 2),
       'utf8',
     );
 
@@ -81,16 +88,21 @@ const headerLangKey = ['zh-cn', 'zh-tw', 'en', 'th', 'vi', 'hi'];
   //filesJs.writeFile(filename, JSON.stringify(create, null, 2), errorHandler);
 })();
 
-function mapping(val, params, params2) {
-  if (typeof params === typeof params2 && typeof params === 'object') {
-    Object.keys(params).forEach((k) => {
-      if (typeof params[k] === 'object') {
+function mapping(val, backstage, frontstageJson,key) {
+  if (typeof backstage === typeof frontstageJson && typeof backstage === 'object') {
+    Object.keys(backstage).forEach((k) => {
+      const filekey=`${key}.${k}`
+      if (typeof backstage[k] === 'object') {
         val[k] = val[k] || {};
-        mapping(val[k], params[k], params2[k]);
-      } else if (params[k] === params2[k] && params[k].indexOf('@:') == -1 && params2[k].indexOf('@:') == -1) {
-        val[k] = params[k];
-      } else if (val[k] && params[k].indexOf('@:') == -1 && params2[k].indexOf('@:') == -1) {
-        val[k] = params[k] || params2[k] ;//暫時以後台前端為優先
+        mapping(val[k], backstage[k], frontstageJson[k],filekey);
+      } else if (backstage[k] === frontstageJson[k] && backstage[k].indexOf('@:') == -1 && frontstageJson[k].indexOf('@:') == -1) {
+        val[k] = backstage[k];
+        delete frontstageJson[k];//前台前端清除
+        // backstage[k] = `@:${filekey}`;//後台前端改成@:連結
+      } else if (val[k] && backstage[k].indexOf('@:') == -1 && frontstageJson[k].indexOf('@:') == -1) {
+        val[k] = backstage[k] || frontstageJson[k] ;//暫時以後台前端為優先
+        delete frontstageJson[k];//前台前端清除
+        // backstage[k] = `@:${filekey}`;//後台前端改成@:連結
       }
     });
   }
@@ -103,12 +115,12 @@ function errorHandler(err) {
   }
 }
 
-function filterNull(params) {
-  Object.keys(params).forEach((key) => {
-    if (typeof params[key] === 'object' && Object.values(params[key]).length > 0) {
-      filterNull(params[key]);
-    } else if (typeof params[key] === 'object' && Object.values(params[key]).length <= 0) {
-      delete params[key];
+function filterNull(backstage) {
+  Object.keys(backstage).forEach((key) => {
+    if (typeof backstage[key] === 'object' && Object.values(backstage[key]).length > 0) {
+      filterNull(backstage[key]);
+    } else if (typeof backstage[key] === 'object' && Object.values(backstage[key]).length <= 0) {
+      delete backstage[key];
     }
   });
 }
