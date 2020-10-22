@@ -65,10 +65,12 @@ const headerLangKey = ['zh-cn', 'zh-tw', 'en', 'th', 'vi', 'hi'];
 
 
     filesJs.createFileSync(
-      path.resolve(path.resolve('.', 'output', 'format', 'i18n', lansgetting, filename)),
+      path.resolve(path.resolve('.', 'output', 'format', 'i18n','langs', lansgetting, filename)),
       JSON.stringify(moduleJspn, null, 2),
       'utf8',
     );
+
+
   });
   //filesJs.writeFile(filename, JSON.stringify(create, null, 2), errorHandler);
 })();
