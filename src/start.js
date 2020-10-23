@@ -79,7 +79,7 @@ const headerLangKey = ['zh-cn', 'zh-tw', 'en', 'th', 'vi', 'hi'];
 
     //後台前端
     filesJs.createFileSync(
-      path.resolve(path.resolve('.', 'output', 'format', 'i18n','backstageJson', lansgetting, filename)),
+      path.resolve(path.resolve('.', 'output', 'format', 'i18n','backstage', lansgetting, filename)),
       JSON.stringify(backstageJson, null, 2),
       'utf8',
     );
