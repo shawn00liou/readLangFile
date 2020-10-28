@@ -1,5 +1,5 @@
 const path = require('path');
-const lansgetting = 'en';
+const lansgetting = 'zh-tw';
 const extend = require('extend');
 const filesJs = require('./files.js');
 
