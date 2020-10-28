@@ -37,5 +37,6 @@
   "UsernameFronzen": "Số tài khoản đã đóng băng",
   "VerificationCodeError": "Mã nghiệm chứng bị lỗi",
   "AuditNotCleared": "",
-  "AgentIdentityNotExist": ""
+  "AgentIdentityNotExist": "",
+  "Maintenance": ""
 }

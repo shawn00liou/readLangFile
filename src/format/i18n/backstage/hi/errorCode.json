@@ -37,5 +37,6 @@
   "UsernameFronzen": "खाता फ्रीज़ किया गया",
   "VerificationCodeError": "सत्यापन कोड गलती ",
   "AuditNotCleared": "",
-  "AgentIdentityNotExist": ""
+  "AgentIdentityNotExist": "",
+  "Maintenance": ""
 }

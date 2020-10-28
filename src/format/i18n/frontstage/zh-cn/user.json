@@ -74,7 +74,8 @@
       "remark": "建议玩家不定时的修改资金密码，可提高帐号的安全性。",
       "settingSuccessMsg": "设置资金密码成功",
       "mifyFailingMsg": "重置资金密码失败",
-      "settingFailingMsg": "设置资金密码失败"
+      "settingFailingMsg": "设置资金密码失败",
+      "unsetable": "请先认证信箱。"
     },
     "modifyFailingMsg": "修改失败"
   },
@@ -265,7 +266,8 @@
     "CenterToSa": "[中心钱包]转[沙龙]",
     "CenterToPs": "[中心钱包]转[玩星]",
     "CenterToMgPlus": "[中心钱包]转[MG+]",
-    "CenterToNwg": "[中心钱包]转[新世界棋牌]"
+    "CenterToNwg": "[中心钱包]转[新世界棋牌]",
+    "ImptToCenter": ""
   },
   "gamePlatform": "游戏平台",
   "recordInfoNumTimeState": "@:common.SerialNumber / @:common.time / @:common.state",

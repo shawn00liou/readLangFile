@@ -37,5 +37,6 @@
   "UsernameFronzen": "บัญชีถูกระงับ",
   "VerificationCodeError": "เกิดข้อผิดพลาดในการยืนยันรหัส",
   "AuditNotCleared": "",
-  "AgentIdentityNotExist": ""
+  "AgentIdentityNotExist": "",
+  "Maintenance": ""
 }

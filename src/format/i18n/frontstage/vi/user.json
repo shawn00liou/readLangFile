@@ -67,7 +67,8 @@
       "settingSuccessMsg": "Thiết lập mật khẩu vốn quỹ thành công.",
       "mifyFailingMsg": "Thiết lập lại mật khẩu vốn quỹ không thành công",
       "settingFailingMsg": "Thiết lập mật khẩu vốn quỹ không thành công",
-      "label": "Mật khẩu vốn quỹ"
+      "label": "Mật khẩu vốn quỹ",
+      "unsetable": ""
     },
     "modifyFailingMsg": "Sửa đổi không thành công"
   },
@@ -246,7 +247,8 @@
     "WalletAuditArtificialReset": "Về 0 thủ công",
     "ArtificialDeposit": "Gửi tiền thủ công",
     "ArtificialWithdrawal": "Rút tiền thủ công",
-    "BatchDeposit": "Gửi tiền từng đợt"
+    "BatchDeposit": "Gửi tiền từng đợt",
+    "ImptToCenter": ""
   },
   "recordInfoNumTimeState": "@:common.SerialNumber / @:common.time / @:common.state",
   "recordInfoNumTime": "@:common.SerialNumber / @:common.time",
